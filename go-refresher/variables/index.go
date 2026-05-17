@@ -1,6 +1,8 @@
 package variables
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func TestVariables() {
 	/*
@@ -46,4 +48,5 @@ func TestVariables() {
 	} else {
 		println("Another user is not active")
 	}
+
 }

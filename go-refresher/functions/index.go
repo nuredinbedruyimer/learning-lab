@@ -52,3 +52,22 @@ func DivideWithRemainder(firstNum int, secondNum int, isFirstModuleBySecond bool
 	}
 
 }
+
+//  experment the named return values and that of variadic functions
+// 1. variadic functions
+
+func Sum(nums ...int) int {
+
+	total := 0
+	for _, currNum := range nums {
+		total += currNum
+	}
+
+	return total
+
+}
+
+func GetTotalMessagesFrorAllUsers(nums ...int) (totalMesssages int) {
+	totalMesssages = Sum(nums...)
+	return
+}

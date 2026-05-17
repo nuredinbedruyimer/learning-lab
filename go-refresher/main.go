@@ -23,11 +23,15 @@ func main() {
 		fmt.Println(" Division = ", divisionResult)
 	}
 
-	divisionWithRemainderResult, remainder, err := functions.DivideWithRemainder(firstNum, 0, true)
+	divisionWithRemainderResult, remainder, err := functions.DivideWithRemainder(firstNum, secondNum, true)
 	if err != nil {
 		fmt.Println("Error: ", err)
 	} else {
 		fmt.Println(" Division with Remainder = ", divisionWithRemainderResult, " Remainder = ", remainder)
 	}
+
+	totalMessagesFromAllUsers := functions.GetTotalMessagesFrorAllUsers(1, 2, 3, 4, 5, 32)
+
+	fmt.Println("Total Message From All Users", totalMessagesFromAllUsers)
 
 }
