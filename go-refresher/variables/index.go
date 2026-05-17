@@ -26,6 +26,8 @@ func TestVariables() {
 	messageCount := 10
 	isMessageRead := false
 
+	messageCount += 1
+
 	fmt.Println("OtherUserName = ", otherUserName, "MessageCount = ", messageCount)
 	if isMessageRead {
 		println("Message is read")
