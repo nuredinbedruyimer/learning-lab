@@ -1,11 +1,10 @@
 package main
 
 import (
-	arrayslice "go_refresher/array_slice"
+	"go_refresher/struct_sample"
 )
 
 func main() {
-
-	arrayslice.ArraySample()
+	struct_sample.StructSample()
 
 }
